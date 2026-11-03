@@ -45,6 +45,8 @@ Requiere Node.js 22 o posterior y MongoDB con transacciones: Atlas o un replica 
    '{"nombre":"Administrador","nombreUsuario":"admin","email":"tu-email@ejemplo.com","password":"REEMPLAZAR-POR-TU-CLAVE"}' | npm run admin:create
    ```
 
+   Ejecutar `npm run admin:create` solo no abre un formulario: hay que enviar el JSON como en el ejemplo anterior.
+
    Elegir una contraseña propia de al menos 8 caracteres y hasta 72 bytes. La entrada se recibe por stdin, no se guarda como archivo. El comando se niega a crear otra cuenta si ya existen usuarios; las siguientes se crean desde el panel.
 
 4. Ejecutar `npm run dev` en `backend`. API: `http://localhost:5001`.
